@@ -9,12 +9,22 @@
 //6. Make sure that the final website is styled like the example shown here:
 //https://l1pp6.csb.app/
 
-//HINT: You will need to study the classes in teh styles.css file to appy styling.
+//HINT: You will need to study the classes in teh styles.css file to appy styling
 
-//1
+//2
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App.jsx";
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx"
+import Note from "./Note.jsx"
 
-ReactDOM.render(<App />, document.getElementById("root"));
+function App() {
+  return (
+    <div>
+        <Header />
+        <Note />
+        <Footer />
+    </div>
+  );
+}
 
+export default App;
